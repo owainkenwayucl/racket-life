@@ -11,4 +11,4 @@ generate-blank: src/generate-blank.rkt src/periodic2d.rkt Makefile
 	$(RACO) $(ROPTS) exe -o generate-blank src/generate-blank.rkt
 
 clean:
-	rm -f life generate-blank compiled
+	rm -f life generate-blank compiled src/compiled
