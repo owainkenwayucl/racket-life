@@ -87,7 +87,7 @@
 ; w   c   e
 ; sw  s  se
 ;
-; = nw + n + ne + w + e + sw + s + se
+; = c + nw + n + ne + w + e + sw + s + se
 (define (periodic2d-9wsum p2d dimensions cell)
   (define w (list-ref dimensions 0))
   (define h (list-ref dimensions 1))  
