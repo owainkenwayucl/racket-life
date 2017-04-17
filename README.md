@@ -11,7 +11,7 @@ To compile the package, enter `make` in the top level directory of the project.
 
 ## Console mode
 
-To run the code in console mode, run `racket life-run.rkt` with two arguments - the input file and the number of steps, so for example:
+To run the code in console mode, run `life` with two arguments - the input file and the number of steps, so for example:
 
 ```
 $ ./life input/glider.pbm 3
@@ -80,7 +80,7 @@ $
 
 ## File mode:
 
-You can invoke file mode by running `racket life-run.rkt` with three arguments as follows:
+You can invoke file mode by running `life` with three arguments as follows:
 
 ```
 $ ./life input/glider.pbm 32 glideout
