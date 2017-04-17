@@ -43,7 +43,7 @@
           (run-file (current-command-line-arguments))
           (run-console (current-command-line-arguments))
           )
-      (display "\nUsage:\n  life-run input.pbm steps [output]\n\n")
+      (display "\nUsage:\n  life input.pbm steps [output]\n\n")
       )
   
   )

@@ -5,12 +5,16 @@ This is a (fairly bad given this is the first large Racket program I've written)
 
 It may be run in two modes - file output (which dumps frames to PBM files) and console output which prints frames to the console.  It reads PBM files as input files.  An example PBM file is shown in `input/glider.pbm`.
 
+## Compiling
+
+To compile the package, enter `make` in the top level directory of the project.
+
 ## Console mode
 
 To run the code in console mode, run `racket life-run.rkt` with two arguments - the input file and the number of steps, so for example:
 
 ```
-$ racket life-run.rkt input/glider.pbm 3
+$ ./life input/glider.pbm 3
 Reading pbm:
 
 P1
@@ -79,7 +83,7 @@ $
 You can invoke file mode by running `racket life-run.rkt` with three arguments as follows:
 
 ```
-$ racket life-run.rkt input/glider.pbm 32 glideout
+$ ./life input/glider.pbm 32 glideout
 Reading pbm:
 
 P1
