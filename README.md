@@ -10,7 +10,7 @@ It may be run in two modes - file output (which dumps frames to PBM files) and c
 To run the code in console mode, run `racket life-run.rkt` with two arguments - the input file and the number of steps, so for example:
 
 ```
-racket life-run.rkt input/glider.pbm 3
+$ racket life-run.rkt input/glider.pbm 3
 Reading pbm:
 
 P1
@@ -71,6 +71,7 @@ Done.
 |........|
 |........|
 +--------+
+$
 ```
 
 ## File mode:
