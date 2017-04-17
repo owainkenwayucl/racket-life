@@ -1,5 +1,5 @@
 # racket-life
-Conway's Game of Life written in Racket
+## Conway's Game of Life written in Racket
 
 This is a (fairly bad given this is the first large Racket program I've written) implementation of Conway's Game of Life.
 
