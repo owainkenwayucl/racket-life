@@ -132,7 +132,7 @@ $
 You can then use a tool like ImageMagick to convert the frames into an animated gif:
 
 ```
-$ convert -delay 50 -scale 64x64 glideout\*.pbm -loop 0 glider.gif
+$ convert -delay 50 -scale 64x64 glideout*.pbm -loop 0 glider.gif
 ```
 
 This will produce an animated gif like this:
