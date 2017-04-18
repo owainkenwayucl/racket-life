@@ -69,11 +69,18 @@
   (edge (+ w 2))
   )
 
+(define (print-pop p2d)
+  (define population (apply + p2d))
+  (display "Population: ")
+  (display population)
+  (display "\n")
+  )
+
 ; Run a specific periodic2d list for n steps and print to console.
 (define (run-console start dimensions n)
   
   (consoledraw start dimensions)
-  
+  (print-pop start)
   (define state start)
   (do ((i 1 (+ i 1))) ((> i n))
     (newline)
@@ -81,13 +88,14 @@
     (display ":\n")
     (set! state (update state dimensions))
     (consoledraw state dimensions)
+    (print-pop state)
     )
   
   )
 
 ; Create output file name.
 (define (outfilename start num max)
-
+  
   ; pad appropriately.
   (define n (number->string num))
   (define ln (string-length n))
@@ -104,12 +112,17 @@
 (define (run-file start dimensions n filename)
   (define max (string-length (number->string n)))
   (define outfile (outfilename filename 0 max))
+  (display "Step: 0  ")
+  (print-pop start)
   (periodic2d-writepbm outfile start dimensions)
   
   (define state start)
   (do ((i 1 (+ i 1))) ((> i n))
     (set! outfile (outfilename filename i max))
     (set! state (update state dimensions))
+    (display (string-append "Step: " (number->string i)))
+    (display "  ")
+    (print-pop state)
     (periodic2d-writepbm outfile state dimensions)
     )
   
