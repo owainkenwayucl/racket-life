@@ -2,7 +2,7 @@
 RACO=raco
 ROPTS=
 
-all: life generate-blank
+all: life generate-blank generate-random
 
 life: src/life.rkt src/life-run.rkt src/periodic2d.rkt Makefile
 	$(RACO) $(ROPTS) exe -o life src/life-run.rkt
@@ -10,5 +10,8 @@ life: src/life.rkt src/life-run.rkt src/periodic2d.rkt Makefile
 generate-blank: src/generate-blank.rkt src/periodic2d.rkt Makefile
 	$(RACO) $(ROPTS) exe -o generate-blank src/generate-blank.rkt
 
+generate-random: src/generate-random.rkt src/periodic2d.rkt Makefile
+	$(RACO) $(ROPTS) exe -o generate-random src/generate-random.rkt
+
 clean:
-	rm -f life generate-blank compiled src/compiled
+	rm -Rf life generate-blank generate-random compiled src/compiled
