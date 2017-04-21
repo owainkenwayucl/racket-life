@@ -10,22 +10,28 @@
 (provide life-run-file)
 
 
-; Print an upper/lower edge.
-(define (edge n)
-  (display (string-append "+" (make-string (- n 2) #\-) "+\n"))
+; Print an lower edge.
+(define (loweredge n)
+  (display (string-append "╰" (make-string (- n 2) #\─) "╯\n"))
   )
+
+; Print an upper edge.
+(define (upperedge n)
+  (display (string-append "╭" (make-string (- n 2) #\─) "╮\n"))
+  )
+
 
 ; Print a line (l).
 (define (lineout l)
   (define ln (length l))
-  (display "|")
+  (display "│")
   (do ((i 1 (+ i 1 ))) ((> i ln))    
     (display (if (> (list-ref l (- i 1)) 0)
                  #\o
                  #\.  
                  ))
     )
-  (display "|\n")
+  (display "│\n")
   )
 
 ; Update state.
@@ -62,11 +68,11 @@
 (define (consoledraw status dimensions)
   (define w (list-ref dimensions 0))
   (define h (list-ref dimensions 1))
-  (edge (+ w 2)) 
+  (upperedge (+ w 2)) 
   (do ((i 1 (+ i 1 ))) ((> i h))
     (lineout (periodic2d-getrow status dimensions (- i 1)))
     )  
-  (edge (+ w 2))
+  (loweredge (+ w 2))
   )
 
 (define (print-pop p2d)
