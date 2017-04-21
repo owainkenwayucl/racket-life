@@ -29,52 +29,56 @@ P1
 0 0 0 0 0 0 0 0 
 
 Done.
-+--------+
-|........|
-|...o....|
-|.o.o....|
-|..oo....|
-|........|
-|........|
-|........|
-|........|
-+--------+
+╭────────╮
+│........│
+│...o....│
+│.o.o....│
+│..oo....│
+│........│
+│........│
+│........│
+│........│
+╰────────╯
+Population: 5
 
 1:
-+--------+
-|........|
-|..o.....|
-|...oo...|
-|..oo....|
-|........|
-|........|
-|........|
-|........|
-+--------+
+╭────────╮
+│........│
+│..o.....│
+│...oo...│
+│..oo....│
+│........│
+│........│
+│........│
+│........│
+╰────────╯
+Population: 5
 
 2:
-+--------+
-|........|
-|...o....|
-|....o...|
-|..ooo...|
-|........|
-|........|
-|........|
-|........|
-+--------+
+╭────────╮
+│........│
+│...o....│
+│....o...│
+│..ooo...│
+│........│
+│........│
+│........│
+│........│
+╰────────╯
+Population: 5
 
 3:
-+--------+
-|........|
-|........|
-|..o.o...|
-|...oo...|
-|...o....|
-|........|
-|........|
-|........|
-+--------+
+╭────────╮
+│........│
+│........│
+│..o.o...│
+│...oo...│
+│...o....│
+│........│
+│........│
+│........│
+╰────────╯
+Population: 5
 $
 ```
 
@@ -98,39 +102,74 @@ P1
 0 0 0 0 0 0 0 0 
 
 Done.
+Step: 0  Population: 5
 Writing PBM: glideout00.pbm Done.
+Step: 1  Population: 5
 Writing PBM: glideout01.pbm Done.
+Step: 2  Population: 5
 Writing PBM: glideout02.pbm Done.
+Step: 3  Population: 5
 Writing PBM: glideout03.pbm Done.
+Step: 4  Population: 5
 Writing PBM: glideout04.pbm Done.
+Step: 5  Population: 5
 Writing PBM: glideout05.pbm Done.
+Step: 6  Population: 5
 Writing PBM: glideout06.pbm Done.
+Step: 7  Population: 5
 Writing PBM: glideout07.pbm Done.
+Step: 8  Population: 5
 Writing PBM: glideout08.pbm Done.
+Step: 9  Population: 5
 Writing PBM: glideout09.pbm Done.
+Step: 10  Population: 5
 Writing PBM: glideout10.pbm Done.
+Step: 11  Population: 5
 Writing PBM: glideout11.pbm Done.
+Step: 12  Population: 5
 Writing PBM: glideout12.pbm Done.
+Step: 13  Population: 5
 Writing PBM: glideout13.pbm Done.
+Step: 14  Population: 5
 Writing PBM: glideout14.pbm Done.
+Step: 15  Population: 5
 Writing PBM: glideout15.pbm Done.
+Step: 16  Population: 5
 Writing PBM: glideout16.pbm Done.
+Step: 17  Population: 5
 Writing PBM: glideout17.pbm Done.
+Step: 18  Population: 5
 Writing PBM: glideout18.pbm Done.
+Step: 19  Population: 5
 Writing PBM: glideout19.pbm Done.
+Step: 20  Population: 5
 Writing PBM: glideout20.pbm Done.
+Step: 21  Population: 5
 Writing PBM: glideout21.pbm Done.
+Step: 22  Population: 5
 Writing PBM: glideout22.pbm Done.
+Step: 23  Population: 5
 Writing PBM: glideout23.pbm Done.
+Step: 24  Population: 5
 Writing PBM: glideout24.pbm Done.
+Step: 25  Population: 5
 Writing PBM: glideout25.pbm Done.
+Step: 26  Population: 5
 Writing PBM: glideout26.pbm Done.
+Step: 27  Population: 5
 Writing PBM: glideout27.pbm Done.
+Step: 28  Population: 5
 Writing PBM: glideout28.pbm Done.
+Step: 29  Population: 5
 Writing PBM: glideout29.pbm Done.
+Step: 30  Population: 5
 Writing PBM: glideout30.pbm Done.
+Step: 31  Population: 5
 Writing PBM: glideout31.pbm Done.
+Step: 32  Population: 5
 Writing PBM: glideout32.pbm Done.
+Step: 33  Population: 5
+Writing PBM: glideout33.pbm Done.
 $ 
 ```
 
